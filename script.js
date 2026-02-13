@@ -248,10 +248,7 @@ downloadBtn.addEventListener("click", () => {
 const music = document.getElementById("loveMusic");
 const musicBtn = document.getElementById("musicToggle");
 
-if (
-  window.location.href ===
-  "https://odychrist.github.io/saint-valentin-app/love.html"
-) {
+if (music && musicBtn) {
   music.volume = 0.4;
   music.play();
 }
