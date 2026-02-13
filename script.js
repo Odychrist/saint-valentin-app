@@ -96,6 +96,8 @@ const submitBtn = document.getElementById("submitBtn");
 const passwordInput = document.getElementById("password");
 const message = document.getElementById("message");
 const heartsContainer = document.querySelector(".hearts");
+const music = document.getElementById("loveMusic");
+const musicBtn = document.getElementById("musicToggle");
 
 if (submitBtn && passwordInput) {
   const password = "CONNEXION5G+";
@@ -245,8 +247,6 @@ downloadBtn.addEventListener("click", () => {
 }); */
 
 // MUSIQUE
-const music = document.getElementById("loveMusic");
-const musicBtn = document.getElementById("musicToggle");
 
 if (
   window.location.href ===
