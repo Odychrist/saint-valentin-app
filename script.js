@@ -249,15 +249,16 @@ const music = document.getElementById("loveMusic");
 const musicBtn = document.getElementById("musicToggle");
 
 if (
-  /* window.location.href ===
-  "https://odychrist.github.io/saint-valentin-app/love.html" */
-  music
+  window.location.href ===
+  "https://odychrist.github.io/saint-valentin-app/love.html"
 ) {
+  music.volume = 0.4;
   music.play();
 }
 
 musicBtn.addEventListener("click", () => {
   if (music.paused) {
+    music.volume = 0.4;
     music.play();
     musicBtn.textContent = "⏸️ Musique";
   } else {
