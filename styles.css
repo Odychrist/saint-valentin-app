@@ -128,7 +128,7 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .container h1 {
     font-size: 1.3rem;
   }
