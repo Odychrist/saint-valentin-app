@@ -249,8 +249,9 @@ const music = document.getElementById("loveMusic");
 const musicBtn = document.getElementById("musicToggle");
 
 if (
-  window.location.href ===
-  "https://odychrist.github.io/saint-valentin-app/love.html"
+  /* window.location.href ===
+  "https://odychrist.github.io/saint-valentin-app/love.html" */
+  music
 ) {
   music.play();
 }
