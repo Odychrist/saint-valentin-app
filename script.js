@@ -122,6 +122,8 @@ if (submitBtn && passwordInput) {
     document.querySelector(".magic-overlay").classList.add("active");
     document.querySelector(".container").classList.add("magic");
 
+    sessionStorage.setItem("loveAccess", "granted");
+
     setTimeout(() => {
       window.location.href = "love.html";
     }, 1800);
@@ -246,7 +248,10 @@ downloadBtn.addEventListener("click", () => {
 const music = document.getElementById("loveMusic");
 const musicBtn = document.getElementById("musicToggle");
 
-if (window.location.href === "http://127.0.0.1:5500/love.html") {
+if (
+  window.location.href ===
+  "https://odychrist.github.io/saint-valentin-app/love.html"
+) {
   music.play();
 }
 

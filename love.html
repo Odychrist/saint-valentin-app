@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon amour ❤️</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="/assets/favicon.png" type="image/png" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
   </head>
 
   <body>
@@ -14,7 +14,7 @@
       <!-- Colonne photo -->
       <div class="love-photo-column">
         <img
-          src="/assets/IMG-20251120-WA0058.jpg"
+          src="assets/IMG-20251120-WA0058.jpg"
           alt="Photo de mon amour"
           class="love-photo"
         />
@@ -80,7 +80,7 @@
 
     <audio id="loveMusic" loop>
       <source
-        src="/assets//amir_longtemps_clip_officiel_mp3_83824.mp3"
+        src="assets//amir_longtemps_clip_officiel_mp3_83824.mp3"
         type="audio/mpeg"
       />
       Ton navigateur ne supporte pas l’audio.
@@ -88,6 +88,10 @@
 
     <button id="musicToggle" class="music-btn">⏸️ Musique</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js">
+      if (sessionStorage.getItem("loveAccess") !== "granted") {
+        window.location.href = "index.html"
+      }
+    </script>
   </body>
 </html>
